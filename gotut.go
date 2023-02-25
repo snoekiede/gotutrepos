@@ -12,7 +12,7 @@ func main() {
 	api := router.Group("/api")
 
 	api.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"message": "OK From CD"})
+		c.JSON(http.StatusOK, gin.H{"message": "OK"})
 	})
 
 	router.Run()
