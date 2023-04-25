@@ -15,5 +15,9 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"message": "OK From CD"})
 	})
 
+	api.GET("/hello", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{"message": "Hello  World!"})
+	})
+
 	router.Run()
 }
